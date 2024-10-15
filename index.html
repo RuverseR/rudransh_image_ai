@@ -4,6 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RuFOTO Ai</title>
+   <style>
+        body {
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* Light text color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1.title-container {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffd700; /* Gold color */
+        }
+
+        form {
+            background-color: rgba(30, 30, 30, 0.7); /* Semi-transparent dark background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent input */
+            color: #ffffff; /* Light text color in input */
+        }
+
+        button {
+            background-color: #ffd700; /* Gold button */
+            color: #000;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ffc700; /* Lighter gold on hover */
+        }
+
+        .advanced-options {
+            display: none; /* Hidden by default */
+            margin-top: 20px;
+        }
+
+        .note {
+            font-size: 12px;
+            color: #ccc;
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            margin: 10px;
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .loading {
+            display: none; /* Hidden by default */
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            margin-top: 20px;
+        }
+
+        .error-message {
+            color: red;
+            text-align: center;
+        }
+
+        .direct-link {
+            display: none; /* Hidden by default */
+            color: #ffd700;
+            text-decoration: underline;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .fullscreen-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* High z-index to overlay */
+        }
+
+        .fullscreen-img img {
+            max-width: 90%;
+            max-height: 90%;
+            border: 2px solid #ffd700; /* Gold border */
+        }
+    </style>
 
 </head>
 <body>
