@@ -1,3 +1,4 @@
+LIVE SITE AT : (https://ruverser.github.io/rudransh_image_ai/)
 Made For Fun Using ai BY Rudransh KUmar
 DEtails:
 * CAn generate Maximum 10 images at once with 80% acuuracy *
